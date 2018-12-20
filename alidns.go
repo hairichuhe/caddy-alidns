@@ -16,7 +16,7 @@ func init() {
 // The credentials are interpreted as follows:
 //
 // len(0): use credentials from environment
-// len(3): credentials[0] = API key
+// len(2): credentials[0] = API key
 //         credentials[1] = Secret key
 func NewDNSProvider(credentials ...string) (caddytls.ChallengeProvider, error) {
 	switch len(credentials) {
